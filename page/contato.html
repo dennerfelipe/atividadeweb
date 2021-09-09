@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Página Inicial -->
+<html>
+
+<!-- O title vai aparecer o nome na aba da página -->
+
+<head> 
+    <title> WebDev </title> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+</head>
+
+<body> 
+
+<div id="container">
+<!-- Área do cabeçalho -->
+
+<header id="cabecalho"> </header>
+
+<!-- Estrutura de Menu -->
+<p style="text-align:center;"><img height="" style="max-width: 200px" src="images/BD.png"/></p>
+<!-- Inserindo linha -->
+
+<br>
+<nav id="menuprincipal" style="text-align:center;">
+    <div>
+        <h3> 
+            <a class="button" href="index.html" > Principal </a>
+            <a class="button" href="equipe.html" > Equipe </a>
+            <a class="button" href="blog.html" > Conteúdo </a>
+            <a class="button" href="contato.html" > Contato </a>
+        </h3>
+    </div>
+</nav>
+<!-- Inserindo linha -->
+<br>
+
+<!-- Área do Corpo -->
+
+<section id="corpo" >
+<h1 class="titulo1" style="text-align:center;"> Contato </h2>
+ 
+    <hgroup id="grupocontato" class="titulo1">
+        <h2> Contato: </h2>
+
+        <ul>
+        <li>Celular: +55 (91) 9999-9999 <img height="18" src="images/logowpp.png"/> </li>
+        <br>
+        <li>E-mail: dennerfelipesf@gmail.com <img height="18" src="images/gmail.png"> </li>
+        <br>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/dennerfelipesf" color="red" target="_blank"> 
+            Denner F. S. Ferreira <img height="18" src="images/linkedin.png"></a></li>    
+        <br>
+        <li>Twitter: <a href="http://twitter.com/" target="_blank"> @dennerfelipe<img height="18" src="images/logotwitter.png"> </a></li>
+        <br>
+        <li>Discord: <a href="https://discord.gg/jCCZq5KgKb" target="_blank"> Chat do Canal <img height="18" src="images/discord.png"></a></li>
+        </ul>
+    </hgroup>
+    
+    <section><hgroup id="localizacao" class="titulo1">
+    <h2> Localização: </h2>
+
+    <p> Rua Marcus Aurélio Homem, 142.</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8550947794174!2d-48.52994328452872!3d-27.598021782837353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273852241c5f61%3A0x77859d80b047da60!2sR.%20Marcus%20Aur%C3%A9lio%20Homem%20-%20Trindade%2C%20Florian%C3%B3polis%20-%20SC%2C%2088040-440!5e0!3m2!1spt-BR!2sbr!4v1631190900111!5m2!1spt-BR!2sbr" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </hgroup>
+    </section>
+
+        
+    <hgroup id="formulario">
+        <h2 class="titulo1"> Formulário: </h2>
+        <form id="formulario" method="post" action="">
+            
+            <fieldset class="corpo1"> <legend> Identificação: </legend>
+                <p>
+                    <label for="idNomeCompleto"> Nome Completo: </label> 
+                    <input type="text" name="nomeNomeCompleto" id="idNomeCompleto" maxlength="10" placeholder="Digite aqui"/> 
+                </p>
+                
+                <p>
+                    <label for="idemail"> E-mail: </label> 
+                    <input type="email" name="nomeemail" id="idemail" placeholder="Exemplo: nome@email.com"/>  
+                </p>
+                
+                <p>
+                    <label for="idDataNasc"> Data de Nascimento: </label> 
+                    <input type="date" name="nomeDataNasc" id="idDataNasc"/> 
+                </p>
+                
+                <fieldset id="idsexo"><legend>Sexo:</legend>
+                        <ul>
+                        <input type="radio" name="nomeSexo" id="idMasculino"/> Masculino <br> 
+                        <input type="radio" name="nomeSexo" id="idFeminino"/> Feminino <br>
+                        <input type="radio" name="nomeSexo" id="idOutro"/> Outro
+                        </ul>
+                </fieldset>
+            </fieldset>
+            
+            <fieldset class="corpo1"> <legend> Endereço: </legend>
+                
+                <p> 
+                    <label> Rua: </label>
+                    <input type="text" name="nomeRua" id="idRua" maxlength="10" placeholder="Digite aqui"/>
+                </p>
+                
+                <p> 
+                    <label> Número: </label> 
+                    <input type="number" name="numerocasa" id="idNumeroCasa" maxlength="10" placeholder="Digite aqui"/>
+                </p>
+                
+                <p>
+                    <label> Cidade: </label> 
+                    <input type="number" name="nomeCidade" id="idCidade" maxlength="10" placeholder="Digite aqui"/> 
+                </p>
+                
+                <p> 
+                <label> Estado: </label> 
+                    <select>
+                        <option>Paraná</option> 
+                        <option>Rio Grande do Sul</option>
+                        <option>Santa Catarina</option>
+                    </select>
+                </p>
+
+            </fieldset>
+
+            <fieldset class="corpo1"> <legend> Escreva sua Mensagem</legend>
+                Mensagem 
+            </fieldset>
+        </form>
+    </hgroup>
+
+    </section>
+
+<!-- Área do rodapé -->
+
+<footer class="footer"> 
+    <p><a href="http://www.youtube.com.br"> <img height="15" style="max-width: 120px" src="images/fig1.png"/></a></p>
+    <p> Copyright © 2021 </p>
+</footer>
+
+    </body> 
+</html>
